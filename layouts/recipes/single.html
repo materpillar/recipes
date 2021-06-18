@@ -1,0 +1,52 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+<section id="main">
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
+          {{ humanize .Section | upper  }}
+        </p>
+        <img src="{{ .Params.image }}">
+        <h1 class="f1">
+          {{ .Title }}
+        </h1>
+        <p>
+          Source: {{ .Params.source | markdownify}}
+        </p>
+      </header>
+  <div>
+  <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+    <h2>Ingredients</h2>
+    <article id="ingredients">
+      <ul>
+        {{ range $ingredient := .Params.ingredients }}
+          {{ if reflect.IsMap ($ingredient) }}
+            {{ range $ingredient_group,$ingredient_list := $ingredient }}
+            <li>{{ $ingredient_group }}
+              <ul>
+              {{ range $ingredient_actual := $ingredient_list }}
+                <li>{{ $ingredient_actual }}</li>
+              {{ end }}
+              </ul></li>
+            {{ end }}
+          {{ else }}
+            <li> {{ $ingredient }}</li>
+          {{ end }}
+        {{ end }}
+      </ul>
+
+
+    </article>
+    <h2>Steps</h2>
+    <article id="steps">
+      <ul>
+        {{ range .Params.steps }}
+          <li>{{ . }}</li>
+        {{ end }}
+        </ul>
+    </article>
+  </div>
+</section>
+
+{{ end }}
