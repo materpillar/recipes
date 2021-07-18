@@ -1,4 +1,8 @@
-baseURL = "http://materpillar.github.io/recipes"
+baseURL = "https://materpillar.github.io/recipes"
+
 languageCode = "en-us"
 title = "Recipe page"
 theme = "ananke"
+
+relativeURLs = true
+canonifyURLs = true
