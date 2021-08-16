@@ -3,20 +3,21 @@ title: "Lente Risotto"
 persons: 4 Persons
 prep-time: 40 minuten
 ingredients:
-- 225g roze garnelen (diepvries)
-- 1 Liter water
-- 300g risotto rijst
-- kruidenmix:
+- Kitchen Basics:
+  - 1 ui -> snipper
+  - 1 Liter groentebouillon
+- Kruidenmix:
   - Zwarte Peper
   - Kurkuma
   - Lavas
   - Dille, Tijm, Peterselie
+- 225g roze garnelen (diepvries)
+- 300g risotto rijst
 - 1 courgette -> stukjes
 - 2 bospenen -> stukjes
 - 1 gele paprika -> stukjes
 - 2 stengels bleekselderij -> stukjes
 - 3 romatomaten -> stukjes
-- 1 ui -> snipper
 - 1 limoen -> rasp schill, pers de limoen uit
 steps:
 - Verhit 2 eetlepes olijfolie in een ruime hapjespan of braadpan en bak hierin de ui, de bospeen en de bleekselderij 5 minuten op middelhoge temperatuur.
